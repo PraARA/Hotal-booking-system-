@@ -1,0 +1,66 @@
+addGuest.html:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Guest</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(108, 173, 184);
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 50px;
+      }
+
+      input {
+        padding: 12px;
+        width: 100%;
+        margin: 10px 0px;
+        border-radius: 12px;
+        border: 0;
+      }
+
+      button {
+        padding: 12px;
+        border-radius: 50px;
+        background-color: aqua;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/add" method="POST">
+      <input type="text" name="room_number" placeholder="Room Number" required />
+      <input type="text" name="first_name" placeholder="First Name" required />
+      <input type="text" name="last_name" placeholder="Last Name" required />
+      <input type="text" name="aadhar_number" placeholder="Aadhar Number" required />
+      <input type="text" name="phone_number" placeholder="Phone Number" required />
+      <label for="check_in_date">Check-In Date</label>
+      <input type="date" name="check_in_date" required />
+      <label for="check_out_date">Check-Out Date</label>
+      <input type="date" name="check_out_date" required />
+      <button type="submit">Add Guest</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left {
+    flex: 1;
+    background-color: #ffe600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 80%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+}
+
+.logo img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.divider {
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
+}
+
+.divider span {
+    position: relative;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    padding: 10px;
+    width: 30%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.social-btn.google {
+    background-color: #4285f4;
+    color: white;
+}
+
+.social-btn.apple {
+    background-color: black;
+    color: white;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.terms {
+    font-size: 14px;
+    color: #888;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}

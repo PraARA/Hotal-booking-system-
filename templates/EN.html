@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language and Currency Dropdown</title>
+    <link rel="stylesheet" href="../static/EN.css">
+</head>
+<body>
+    <div class="dropdown-container">
+        <form class="dropdown-form">
+            <label for="language">Select Language</label>
+            <select name="language" id="language">
+                <option value="bahasa-indonesia">Bahasa Indonesia</option>
+                <option value="bahasa-melayu">Bahasa Melayu</option>
+                <option value="danish">Dansk</option>
+                <option value="german">Deutsch</option>
+                <option value="english" selected>English</option>
+                <option value="spanish">Español</option>
+                <option value="french">Français</option>
+                <option value="croatian">Hrvatski</option>
+                <option value="italian">Italiano</option>
+                <option value="hungarian">Magyar</option>
+                <option value="dutch">Nederlands</option>
+                <option value="polish">Polski</option>
+                <option value="portuguese">Português</option>
+            </select>
+
+            <label for="currency">Select Currency</label>
+            <select name="currency" id="currency">
+                <option value="INR" selected>INR - Indian Rupee</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+            </select>
+
+            <button type="submit" class="apply-btn">Apply</button>
+        </form>
+    </div>
+</body>
+</html>

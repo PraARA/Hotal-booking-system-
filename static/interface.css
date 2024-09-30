@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    block-size: var(--abs-56);
+}
+
+.logo img {
+    width: 220px;
+}
+
+.navigation a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.search-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.input-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 14px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.partners img {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.partners span {
+    font-size: 16px;
+    color: gray;
+    margin-left: 10px;
+}
+/* discover the best time to book ur next stay*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://c4.wallpaperflare.com/wallpaper/636/592/951/beach-1920x1080-high-definition-wallpaper-preview.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: black;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(236, 238, 238);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(239, 8, 8, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.city-tabs {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.city {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.city.active {
+    background-color: rgb(1, 8, 16);
+    color: rgb(245, 243, 243);
+}
+
+.scroll-btn {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.price-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row:hover {
+    background-color: #e2e2e2;
+}
+
+.month {
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .row {
+        width:100%;
+    }
+}
+
+/* top-reated hotels*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hotel-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #169fef;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hotel-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.hotel-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.rating, .location, .amenities {
+    margin-bottom: 10px;
+}
+
+.check-prices {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+/*popular place*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.popular-searches {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.city-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+}
+
+.city-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    min-width: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.city-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.city-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.city-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.city-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom:5px;
+}
+/*search simply*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/*Footer*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.country-selector {
+    margin-bottom: 20px;
+}
+
+select {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links div {
+    margin-right: 50px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.newsletter h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color:#999;
+}

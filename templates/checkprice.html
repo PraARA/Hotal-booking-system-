@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Listing Example</title>
+    <link rel="stylesheet" href="../static/checkprice.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <img src="https://dynamic.design.com/preview/logodraft/eb86fc23-0abe-4984-beaf-b32b42fab518/image/large.png" alt="Trivago Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Destination" value="Palace Downtown">
+            
+                <div class="input-group">
+                    <label for="checkin">Check in</label>
+                    <input type="date" id="checkin">
+                </div>
+
+                <div class="input-group">
+                    <label for="checkout">Check out</label>
+                    <input type="date" id="checkout">
+                </div>
+    
+                <div class="guests-rooms">
+                    <label for="guests">Guests:</label>
+                    <select name="guests" id="guests">
+                        <option value="4">4 Guests, 1 Room</option>
+                    </select>
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </header>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <div class="dropdown">
+                <label for="price">Price:</label>
+                <select name="price" id="price">
+                    <option value="">Select</option>
+                    <option value="">Low to High</option>
+                    <option value="high-to-low">High to Low</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="filters">Filters:</label>
+                <select name="filters" id="filters">
+                    <option value="">Select</option>
+                    <option value="wifi">Free WiFi</option>
+                    <option value="breakfast">Breakfast Included</option>
+                    <option value="pool">Pool</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="guest-rating">Guest Rating:</label>
+                <select name="guest-rating" id="guest-rating">
+                    <option value="">Select</option>
+                    <option value="8">8+</option>
+                    <option value="9">9+</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="property-type">Property Type:</label>
+                <select name="property-type" id="property-type">
+                    <option value="">Select</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="location">Location:</label>
+                <select name="Location" id="Location">
+                    <option value="">Select</option>
+                    <option value="">India</option>
+                    <option value="">Dubai</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Sorting Section -->
+        <div class="sort-by">
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+                <option value="recommendations">Our recommendations</option>
+                <option value="price">Price</option>
+                <option value="rating">Guest Rating</option>
+            </select>
+        </div>
+
+       
+            </div>
+        </div>
+    </div>
+
+
+<!-- 1 -->
+<div class="hotel-container">
+    <!-- Hotel Image and Details -->
+    <div class="hotel-header">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/76/2b/1e/the-address-dubai-marina.jpg?w=700&h=-1&s=1" alt="JW Marriott Hotel Marina" class="hotel-img">
+        <div>
+            <h1>JW Marriott Hotel Marina</h1>
+            <p class="sub-title">Luxurious Marina Haven, Relaxation And Rejuvenation</p>
+            <p class="location">Dubai, 21.0 km to City centre</p>
+            <p class="rating">9.6 - Excellent (14588 ratings)</p>
+        </div>
+    </div>
+
+    <!-- Pricing Info -->
+    <div class="price-info">
+        <span class="price">From ₹16,905</span>
+        <a href="/addGuest"><button class="btn">BOOK NOW</button>
+    </div>
+
+    <!-- Date Selection -->
+    <div class="date-selection">
+        <button class="date-btn">Select dates</button>
+        <button class="date-btn">Tonight</button>
+        <button class="date-btn">Tomorrow night</button>
+        <button class="date-btn">This weekend</button>
+        <button class="date-btn">Next weekend</button>
+    </div>
+
+    <!-- Price Trend Chart -->
+    <div class="price-trend">
+        <h3>Price trend for this stay</h3>
+        <p>Based on average prices on trivago from the last 30 days</p>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTThKJdjrlawRkxIWcYoznQ4aL_D-1FzRvFPHTyofsWxU2Xwkjw" alt="Price Trend Chart" class="chart">
+    </div>
+</div>
+
+<!-- 2 -->
+
+<div class="hotel-container">
+    <!-- Hotel Image and Details -->
+    <div class="hotel-header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqLW3bbQTodV4C3eI7Cu1ueIr96nLQL96xg&s" alt="JW Marriott Hotel Marina" class="hotel-img">
+        <div>
+            <h1>Vida Creel Harbor</h1>
+            <p class="sub-title">Luxurious Marina Haven, Relaxation And Rejuvenation</p>
+            <p class="location">Dubai, 42.0 km to City centre</p>
+            <p class="rating">9.6 - Excellent (6871 ratings)</p>
+        </div>
+    </div>
+
+    <!-- Pricing Info -->
+    <div class="price-info">
+        <span class="price">From ₹22,831</span>
+        <a href="/addGuest"><button class="btn">BOOK NOW</button>
+    </div>
+
+    <!-- Date Selection -->
+    <div class="date-selection">
+        <button class="date-btn">Select dates</button>
+        <button class="date-btn">Tonight</button>
+        <button class="date-btn">Tomorrow night</button>
+        <button class="date-btn">This weekend</button>
+        <button class="date-btn">Next weekend</button>
+    </div>
+
+    <!-- Price Trend Chart -->
+    <div class="price-trend">
+        <h3>Price trend for this stay</h3>
+        <p>Based on average prices on trivago from the last 30 days</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjrCZF9oKu1_yrl3WO4DHEtByUGkcmArMk4eK3i7eGHV3u3TWV" alt="Price Trend Chart" class="chart">
+    </div>
+</div>
+
+<!-- 3 -->
+
+<div class="hotel-container">
+    <!-- Hotel Image and Details -->
+    <div class="hotel-header">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/446987094.jpg?k=73ccc47ed177a65edc6cf9a4678d754a08466a0b98a17fe781712c435baaa4ef&o=&hp=1" alt="JW Marriott Hotel Marina" class="hotel-img">
+        <div>
+            <h1>AL Maha </h1>
+            <p class="sub-title">Luxurious Marina Haven, Relaxation And Rejuvenation</p>
+            <p class="location">Dubai, 14.0 km to City centre</p>
+            <p class="rating">9.7 - Excellent (5320 ratings)</p>
+        </div>
+    </div>
+
+    <!-- Pricing Info -->
+    <div class="price-info">
+        <span class="price">From ₹28,390</span>
+        <a href="/addGuest"><button class="btn">BOOK NOW</button>
+    </div>
+
+    <!-- Date Selection -->
+    <div class="date-selection">
+        <button class="date-btn">Select dates</button>
+        <button class="date-btn">Tonight</button>
+        <button class="date-btn">Tomorrow night</button>
+        <button class="date-btn">This weekend</button>
+        <button class="date-btn">Next weekend</button>
+    </div>
+
+    <!-- Price Trend Chart -->
+    <div class="price-trend">
+        <h3>Price trend for this stay</h3>
+        <p>Based on average prices on trivago from the last 30 days</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTebjPr3dHaATMlDgHJ5r-8mHwcB5PPne8s--dRC7nlLbiF4BC1" alt="Price Trend Chart" class="chart">
+    </div>
+</div>
+
+<!-- 4 -->
+
+<div class="hotel-container">
+    <!-- Hotel Image and Details -->
+    <div class="hotel-header">
+        <img src="https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-al-arab/fallback-image/burj-al-arab-1-dtcm.jpg" alt="JW Marriott Hotel Marina" class="hotel-img">
+        <div>
+            <h1>Burj Al Arab</h1>
+            <p class="sub-title">Luxurious Marina Haven, Relaxation And Rejuvenation</p>
+            <p class="location">Dubai, 32.0 km to City centre</p>
+            <p class="rating">9.8 - Excellent (11200 ratings)</p>
+        </div>
+    </div>
+
+    <!-- Pricing Info -->
+    <div class="price-info">
+        <span class="price">From ₹32,999</span>
+        <a href="/addGuest"><button class="btn">BOOK NOW</button>
+    </div>
+
+    <!-- Date Selection -->
+    <div class="date-selection">
+        <button class="date-btn">Select dates</button>
+        <button class="date-btn">Tonight</button>
+        <button class="date-btn">Tomorrow night</button>
+        <button class="date-btn">This weekend</button>
+        <button class="date-btn">Next weekend</button>
+    </div>
+
+    <!-- Price Trend Chart -->
+    <div class="price-trend">
+        <h3>Price trend for this stay</h3>
+        <p>Based on average prices on trivago from the last 30 days</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjrCZF9oKu1_yrl3WO4DHEtByUGkcmArMk4eK3i7eGHV3u3TWV" alt="Price Trend Chart" class="chart">
+    </div>
+</div>
+
+<!-- 5 -->
+
+<div class="hotel-container">
+    <!-- Hotel Image and Details -->
+    <div class="hotel-header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Hotel_Atlantis_at_Sunset%2C_The_Palm_-_Dubai_%2849510861268%29.jpg/1200px-Hotel_Atlantis_at_Sunset%2C_The_Palm_-_Dubai_%2849510861268%29.jpg" alt="JW Marriott Hotel Marina" class="hotel-img">
+        <div>
+            <h1>Atlantis The Palm</h1>
+            <p class="sub-title">Luxurious Marina Haven, Relaxation And Rejuvenation</p>
+            <p class="location">Dubai, 10.0 km to City centre</p>
+            <p class="rating">9.5 - Excellent (13600 ratings)</p>
+        </div>
+    </div>
+
+    <!-- Pricing Info -->
+    <div class="price-info">
+        <span class="price">From ₹26,899</span>
+        <a href="/addGuest"><button class="btn">BOOK NOW</button>
+    </div>
+
+    <!-- Date Selection -->
+    <div class="date-selection">
+        <button class="date-btn">Select dates</button>
+        <button class="date-btn">Tonight</button>
+        <button class="date-btn">Tomorrow night</button>
+        <button class="date-btn">This weekend</button>
+        <button class="date-btn">Next weekend</button>
+    </div>
+
+    <!-- Price Trend Chart -->
+    <div class="price-trend">
+        <h3>Price trend for this stay</h3>
+        <p>Based on average prices on trivago from the last 30 days</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTebjPr3dHaATMlDgHJ5r-8mHwcB5PPne8s--dRC7nlLbiF4BC1" alt="Price Trend Chart" class="chart">
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> travigo index</title>
+    
+</head>
+
+<body>
+    <h3>Users</h3>
+    <div>
+        <table border="1">
+            <thead>
+                <th>ID</th>
+                <th>email:</th>
+                <th>Password</th>
+                <th>#</th>
+            </thead>
+
+            {% for data in users %}
+            <tbody>
+                <td>{{data.id}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.password}}</td>
+                <td><a href="/delete1/{{data.id}}" type="button"> Delete</a></td>
+            </tbody>
+            {% endfor %}
+        </table>
+        <br>
+        <a href="/insert">login</a>
+    </div>
+
+</body>
+
+</html>
